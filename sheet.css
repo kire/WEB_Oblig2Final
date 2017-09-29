@@ -1,0 +1,143 @@
+body {
+	background-color: #bfbfbf;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(fonts/poppins.ttf);
+}
+
+#master-grid {
+	max-width: 1200px;
+	margin: 0 auto;
+			
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100px auto;
+	grid-template-areas: 	"header header header"
+							"nav nav nav"
+							"maincontent maincontent maincontent"
+							"maincontent maincontent maincontent"
+							"maincontent maincontent maincontent"
+							"maincontent maincontent maincontent"
+							"maincontent maincontent maincontent"
+							"maincontent maincontent maincontent"
+							"maincontent maincontent maincontent"
+							"footer footer footer";
+}
+			
+header {
+	grid-area: header;
+	background-color: #333;
+	padding: 10px;
+	color: white;
+	font-family: ubuntu;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+div.nav {
+	grid-area: nav;
+	font-family: ubuntu;
+	color: white;
+				
+}
+
+
+ul {
+   	list-style-type: none;
+   	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #111;
+}
+
+
+.main {
+	grid-area: maincontent;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color: white;
+	padding: 10px;
+	background-color: #333;
+
+}
+
+footer {
+	background-color: #333;
+	padding: 20px;
+	grid-area: footer;
+}
+
+footer p {
+
+	margin: 0px auto;
+	color: white;
+	text-align: center;
+	grid-area: footer;
+	font-family: ubuntu;
+}
+
+footer p a {
+	color: white;
+}
+h3 a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #333;
+	background-color: white;
+	padding: 5px;
+	float: right;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+img{
+	padding:20px;
+	width: 50%;
+	border-color: white;
+	border-style: solid;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-decoration: none;
+
+}
+
+td, th {
+    border: 1px solid #d8d8d8;
+    text-align: left;
+    padding: 8px;
+
+}
+
+table a{
+	color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #404040;
