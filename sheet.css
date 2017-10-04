@@ -85,6 +85,7 @@ footer {
 	background-color: #333;
 	padding: 20px;
 	grid-area: footer;
+	margin-bottom: auto;
 }
 
 footer p {
@@ -141,3 +142,4 @@ table a{
 
 tr:nth-child(even) {
     background-color: #404040;
+}
